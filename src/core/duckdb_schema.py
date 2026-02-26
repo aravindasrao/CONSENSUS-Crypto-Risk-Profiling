@@ -1,8 +1,6 @@
 # src/core/duckdb_schema.py
 """
 DuckDB Schema 
-This version removes all duplicate table and sequence definitions and ensures
-all analysis modules have the correct tables and columns available.
 """
 import re
 from typing import List, Dict, Optional

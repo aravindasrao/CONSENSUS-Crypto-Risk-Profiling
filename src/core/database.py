@@ -38,13 +38,11 @@ class DatabaseEngine:
     
     def __init__(self, config: Dict[str, Any] = None, read_only: bool = False):
         """Initialize DuckDB database"""
-        # If a specific config dict is not passed, use the global config's database section.
-        # This makes the class self-sufficient and consistent, removing unsafe hardcoded defaults.
+
         if config is None:
             config = global_config.get_database_config()
         
         # Configuration
-        # Rely on the provided config or the global config, removing hardcoded fallbacks here.
         self.db_path = config.get('db_path')
         self.db_type = config.get('db_type', 'duckdb')
         self.memory_limit = config.get('memory_limit_gb', 8)
