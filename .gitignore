@@ -1,0 +1,52 @@
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+env/
+.venv/
+
+# ==========================================
+# macOS System Files
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ==========================================
+# Databases
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ==========================================
+# Python Artifacts
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+
+# ==========================================
+# Data / CSV Explicit Rules
+# ==========================================
+# CSV files are inherently allowed because they are not listed above.
+# However, if you ever decide to ignore an entire directory (e.g., data/),
+# but still want to track CSVs inside it, uncomment the line below:
+# !*.csv
