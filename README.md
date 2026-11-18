@@ -11,6 +11,9 @@ By systematically uniting evidence from deterministic heuristics, behavioral clu
 ## 📖 Abstract
 Global financial integrity is fundamentally challenged by cryptocurrency mixers such as Tornado Cash, which facilitate billions in illicit fund flows. Low detection rates, reliance on labeled training data that is unavailable for novel attacks, and failure to analyze temporal coordination patterns are all impediments to the effectiveness of existing forensic tools. We introduce CONSENSUS, a self-supervised heterogeneous ensemble framework that addresses the challenge of attribution in mixed transaction streams. It synthesizes evidence by orchestrating nine analytical modalities—including deterministic clustering, behavioral analysis, and multiple graph neural network architectures—through a formal consensus mechanism. 
 
+## 📎 Supplementary Material
+The supplementary material accompanying the paper is available here: [**Supplementary Material (PDF)**](doc/supplementary/supplementary.pdf)
+
 ## ⚙️ Analytical Pipeline Architecture
 The `pipeline_orchestrator.py` manages the execution flow across four distinct phases, optimized to separate CPU-bound pathfinding from GPU-accelerated deep learning:
 
@@ -27,7 +30,8 @@ The `pipeline_orchestrator.py` manages the execution flow across four distinct p
 │   └── exploits/          # ↳ Downloaded DeFi exploit datasets (Ronin, Poly Network, etc.)
 ├── doc/                   # Comprehensive documentation and interpretations
 │   ├── analysis/          # Logic definitions (GNNs, DFS, temporal networks, ZK proofs)
-│   └── interpretations/   # Exported forensic reports, evidence logs, and visual summaries
+│   ├── interpretations/   # Exported forensic reports, evidence logs, and visual summaries
+│   └── supplementary/     # Supplementary material for the paper (PDF)
 ├── scripts/               # Utility scripts
 │   └── download_exploit_data.py  # Etherscan API downloader for case studies
 ├── src/                   # Core application source code
